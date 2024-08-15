@@ -2,7 +2,7 @@ name: 组播采集合并
 
 on:
   schedule:
-    - cron: '0 */8 * * *' # 这里更改自动运行的时间#_ud
+    - cron: '0 8 1 * *' # 这里更改自动运行的时间#_ud
   workflow_dispatch:
     branches:
       - main
@@ -31,7 +31,7 @@ jobs:
       # 提交和推送的步骤，不再检查文件是否发生变化#
       - name: Commit and push changes
         run: |
-          git config --local user.email "actions@126.com"
+          git config --local user.email "aaliaaa@163.com"
           git config --local user.name "GitHub Action"
           git add .
           # 即使没有文件改变，也会提交一个空的提交
